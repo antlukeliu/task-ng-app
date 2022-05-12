@@ -6,6 +6,7 @@ import { Task } from '../model/Task';
 import { PageResponse } from '../model/PageResponse';
 import { TaskResponse } from '../model/TaskResponse';
 
+import {SelectionModel} from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-task-table',
@@ -16,6 +17,7 @@ export class TaskTableComponent implements OnInit {
 
   displayedColumns: string[] = ['id', 'description', 'dueDate', 'completed'];
   dataSource = new MatTableDataSource<Task>();
+  selection = new SelectionModel<Task>(true, []);
 
   tasks: Task[];
   taskresponse: TaskResponse;

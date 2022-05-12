@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {  MatTableModule } from '@angular/material/table';
 import {  MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AppComponent } from './app.component';
 import { TaskTableComponent } from './task-table/task-table.component';
 
@@ -18,7 +18,8 @@ import { TaskTableComponent } from './task-table/task-table.component';
     MatPaginatorModule,
     MatTableModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
